@@ -1,2 +1,2 @@
-# InteractiveStory
-Building an Interactive Story app
+# Interactive Story
+Building an Interactive Story Android Course
