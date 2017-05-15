@@ -1,13 +1,13 @@
-package com.oletob.interactivestory;
+package com.oletob.interactivestory.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import com.oletob.interactivestory.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void startStory(String name) {
         Intent intent = new Intent(this, StoryActivity.class);
-        intent.putExtra("name", name);
+
+        intent.putExtra(getString(R.string.key_name), name);
         startActivity(intent);
     }
 }
